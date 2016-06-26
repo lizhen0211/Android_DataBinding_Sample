@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import
+            alias="UserAlias"
+            type="com.example.administrator.databindingsample.aliasandnullcoalescing.User" />
+
+        <variable
+            name="user"
+            type="UserAlias" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.lastName}"
+            android:visibility="@{user.isAdult ? View.VISIBLE : View.GONE}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.displayName ?? user.lastName}" />
+
+        <!--This is functionally equivalent to:-->
+        <!--android:text="@{user.displayName != null ? user.displayName : user.lastName}"-->
+    </LinearLayout>
+</layout>

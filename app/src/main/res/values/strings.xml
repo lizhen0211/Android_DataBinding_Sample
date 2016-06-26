@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DataBindingSample</string>
+    <string name="null_value">空值</string>
+</resources>
