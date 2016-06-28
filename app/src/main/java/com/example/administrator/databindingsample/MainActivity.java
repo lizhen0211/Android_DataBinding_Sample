@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.administrator.databindingsample.aliasandnullcoalescing.AliasAndNullCoalescing;
+import com.example.administrator.databindingsample.attributesetters.AttributeSetters;
 import com.example.administrator.databindingsample.bindingevents.BindingEventActivity;
 import com.example.administrator.databindingsample.custombinding.CustomBinding;
 import com.example.administrator.databindingsample.dynamicvariables.DynamicVariables;
@@ -60,5 +61,11 @@ public class MainActivity extends Activity {
     public void startDynamicVariables(View view) {
         Intent intent = new Intent(MainActivity.this, DynamicVariables.class);
         startActivity(intent);
+    }
+
+    public void startAttributeSetters(View view) {
+        Intent intent = new Intent(MainActivity.this, AttributeSetters.class);
+        startActivity(intent);
+
     }
 }

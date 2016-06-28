@@ -22,7 +22,8 @@
         <activity android:name=".includes.IncludesActivity" />
         <activity android:name=".observableobjects.ObservableActivity" />
         <activity android:name=".viewswithids.ViewsWithIDs" />
-        <activity android:name=".dynamicvariables.DynamicVariables"></activity>
+        <activity android:name=".dynamicvariables.DynamicVariables" />
+        <activity android:name=".attributesetters.AttributeSetters"></activity>
     </application>
 
 </manifest>
