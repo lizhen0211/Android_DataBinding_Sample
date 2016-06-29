@@ -1,7 +1,5 @@
 package com.example.administrator.databindingsample.bindingevents;
 
-import android.content.Context;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -10,18 +8,16 @@ import android.widget.Toast;
  */
 public class EventHandler {
 
-    private Context _context;
-
-    public EventHandler(Context context) {
-        _context = context;
-    }
-
     public void onClickFriend(View view) {
-        Toast.makeText(_context, "onClickFriend", Toast.LENGTH_SHORT).show();
+        Toast.makeText(view.getContext(), "onClickFriend", Toast.LENGTH_SHORT).show();
     }
 
     public void onClickEnemy(View view) {
-        Toast.makeText(_context, "onClickEnemy", Toast.LENGTH_SHORT).show();
+        Toast.makeText(view.getContext(), "onClickEnemy", Toast.LENGTH_SHORT).show();
+    }
+
+    public void onSaveClick(View view, User user) {
+        Toast.makeText(view.getContext(), "onSaveClick:" + user.getFirstName(), Toast.LENGTH_SHORT).show();
     }
 
 }

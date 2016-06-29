@@ -20,7 +20,7 @@ public class BindingEventActivity extends Activity {
         super.onCreate(savedInstanceState);
         ActivityEventBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_event);
         User user = new User("firstName", "lastName");
-        EventHandler handler = new EventHandler(BindingEventActivity.this);
+        EventHandler handler = new EventHandler();
         //user.setFriend(true);
         binding.setUser(user);
         binding.setHandlers(handler);
