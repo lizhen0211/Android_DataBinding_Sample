@@ -11,6 +11,7 @@ import com.example.administrator.databindingsample.bindingevents.BindingEventAct
 import com.example.administrator.databindingsample.custombinding.CustomBinding;
 import com.example.administrator.databindingsample.dynamicvariables.DynamicVariables;
 import com.example.administrator.databindingsample.includes.IncludesActivity;
+import com.example.administrator.databindingsample.objectconversions.ObjectConversions;
 import com.example.administrator.databindingsample.observableobjects.ObservableActivity;
 import com.example.administrator.databindingsample.simplebinding.SimpleBindingActivity;
 import com.example.administrator.databindingsample.viewswithids.ViewsWithIDs;
@@ -66,6 +67,10 @@ public class MainActivity extends Activity {
     public void startAttributeSetters(View view) {
         Intent intent = new Intent(MainActivity.this, AttributeSetters.class);
         startActivity(intent);
+    }
 
+    public void startObjectConversions(View view) {
+        Intent intent = new Intent(MainActivity.this, ObjectConversions.class);
+        startActivity(intent);
     }
 }

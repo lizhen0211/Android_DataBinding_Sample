@@ -69,6 +69,11 @@
                 android:onClick="startAttributeSetters"
                 android:text="Attribute Setters" />
 
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:onClick="startObjectConversions"
+                android:text="Object Conversions" />
         </LinearLayout>
     </ScrollView>
 </layout>
